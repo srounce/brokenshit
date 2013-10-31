@@ -7,4 +7,12 @@ if (Meteor.isClient) {
       true
     ];
   };
+
+  Template.hello.helpers({
+    checked: function (data) {
+        if(data){
+            return "checked";
+        }
+    }
+  });
 }
