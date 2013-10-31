@@ -8,6 +8,10 @@
 
 <template name="hello">
   <h1>Hello World!</h1>
-  {{greeting}}
-  <input type="button" value="Click" />
+  {{#each crap}}
+  <div>
+    <input type="checkbox" {{#if this}}checked{{/if}} />
+    {{#if this}}blahh{{/if}}
+  </div>
+  {{/each}}
 </template>
