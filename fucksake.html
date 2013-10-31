@@ -10,9 +10,9 @@
   <h1>Hello World!</h1>
   {{#each crap}}
   <div>
-    <input type="checkbox" {{#if this}}checked{{/if}} />
-    {{#if this}}blahh{{/if}}
+    <input type="checkbox" name="sakefuck" value="1" {{checked this}}>
+    {{#if this}}hello{{/if}}
   </div>
   {{/each}}
-  <input type="checkbox" {{#if crap}}checked{{/if}} />
+  <input type="checkbox" {{#if crap}}checked="checked"{{/if}}>
 </template>
