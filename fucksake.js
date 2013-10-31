@@ -9,10 +9,10 @@ if (Meteor.isClient) {
   };
 
   Template.hello.helpers({
-  	checked: function (data) {
-  		if(data){
-  			return "checked";
-  		}
-  	}
+    checked: function (data) {
+        if(data){
+            return "checked";
+        }
+    }
   });
 }
