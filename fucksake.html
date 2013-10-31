@@ -8,11 +8,20 @@
 
 <template name="hello">
   <h1>Hello World!</h1>
+  <div>
+    Outside of block helper render context:
+    <input type="checkbox" {{#if crap}}checked{{/if}} />
+  </div>
   {{#each crap}}
   <div>
+    Normal:<br/>
     <input type="checkbox" {{#if this}}checked{{/if}} />
+
+    {{#isolate}}
+    Within #isolate block:<br/>
+    <input type="checkbox" {{#if this}}checked{{/if}} />
+    {{/isolate}}
     {{#if this}}blahh{{/if}}
   </div>
   {{/each}}
-  <input type="checkbox" {{#if crap}}checked{{/if}} />
 </template>
