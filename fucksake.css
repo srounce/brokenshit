@@ -3,4 +3,5 @@
 * { font:12px/1.6 "Helvetica Neue", Helvetica, Arial, sans-serif; }
 h1 { font-size:4em; font-weight:100; }
 
-div { border-bottom:1px solid #DDD; margin:1.6em; padding:1.6em; }
+fieldset { border:0; border-bottom:1px solid #DDD; margin:1.6em; padding:1.6em; }
+label { display:block; margin-bottom:1em; }

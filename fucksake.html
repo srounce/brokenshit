@@ -13,15 +13,20 @@
     <input type="checkbox" {{#if crap}}checked{{/if}} />
   </div>
   {{#each crap}}
-  <div>
-    Normal:<br>
-    <input type="checkbox" {{#if this}}checked{{/if}} />
-    <br>
-    {{#isolate}}
-    Within #isolate block:<br>
-    <input type="checkbox" {{#if this}}checked{{/if}} />
-    {{/isolate}}
-    {{#if this}}blahh{{/if}}
-  </div>
+  <fieldset>
+    <label>
+      Normal:
+      <input type="checkbox" {{#if this}}checked{{/if}} />
+    </label>
+    <label>
+      Within #isolate block:
+      {{#isolate}}
+      <input type="checkbox" {{#if this}}checked{{/if}} />
+      {{/isolate}}
+    </label>
+    <p>
+      {{#if this}}blahh{{/if}}
+    </p>
+  </fieldset>
   {{/each}}
 </template>
